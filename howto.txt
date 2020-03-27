@@ -1,0 +1,11 @@
+virtualenv --python=python3.7 coronastatus
+
+pip3 install -r requirements.txt
+
+git init
+git checkout -b sierra
+git add .
+git commit -am "init"
+git push --set-upstream origin sierra
+
+python3 crawling.py
